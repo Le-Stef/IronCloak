@@ -1,0 +1,58 @@
+{
+  "app": {
+    "starting": "IronCloak starting...",
+    "proxy_will_listen": "Proxy will listen on {0}",
+    "shutdown": "Shutdown signal received, exiting...",
+    "runtime_error": "Runtime error: {0}",
+    "config_loaded": "Configuration loaded (language: {0})"
+  },
+  "tor": {
+    "configuring": "Configuring Tor client...",
+    "bootstrapping": "Bootstrapping Tor (this may take a moment)...",
+    "bootstrap_complete": "Tor bootstrap complete!",
+    "build_config_failed": "Failed to build Tor client config",
+    "bootstrap_failed": "Failed to bootstrap Tor client"
+  },
+  "socks": {
+    "listening": "SOCKS5 server listening on {0}",
+    "bind_failed": "Failed to bind SOCKS5 server on {0}",
+    "accept_failed": "Failed to accept connection: {0}",
+    "new_connection": "[conn:{0}] New connection",
+    "connection_error": "[conn:{0}] Connection error: {1}",
+    "connection_closed": "[conn:{0}] Connection closed",
+    "handshake_failed": "SOCKS5 handshake failed: {0}",
+    "no_target": "No target address in SOCKS5 request",
+    "ip_rejected": "[conn:{0}] Rejected direct IP connection to {1} (dns_reject_ip=true)",
+    "ip_rejected_bail": "Direct IP connections are rejected (dns_reject_ip=true)",
+    "connecting": "[conn:{0}] CONNECT {1}:{2}",
+    "opening_stream": "[conn:{0}] Opening Tor stream to {1}:{2}...",
+    "connect_timeout": "[conn:{0}] Tor connect to {1}:{2} timed out after 60s",
+    "connect_failed": "Tor connect to {0}:{1} failed: {2}",
+    "stream_established": "[conn:{0}] Tor stream established to {1}:{2}",
+    "socks_reply_sent": "[conn:{0}] Sent SOCKS5 success reply",
+    "relay_complete": "[conn:{0}] Relay complete: {1} bytes up, {2} bytes down",
+    "relay_ended": "[conn:{0}] Relay ended: {1}",
+    "server_error": "SOCKS5 server error: {0}"
+  },
+  "config": {
+    "file_not_found": "Config file {0} not found, using defaults",
+    "read_failed": "Failed to read config file: {0}",
+    "parse_failed": "Failed to parse TOML config"
+  },
+  "gui": {
+    "status": "Status",
+    "connected": "Connected",
+    "disconnected": "Disconnected",
+    "configure": "Configure...",
+    "quit": "Quit",
+    "port_label": "SOCKS5 Port:",
+    "language_label": "Language:",
+    "apply": "Apply",
+    "saved": "Configuration saved.",
+    "save_failed": "Failed to save configuration: {0}",
+    "restart_required": "Restart required to apply changes",
+    "restart": "Restart now",
+    "pending_port": "(next restart: {0})",
+    "window_title": "IronCloak"
+  }
+}

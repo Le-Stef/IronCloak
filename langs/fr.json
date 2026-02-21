@@ -1,0 +1,58 @@
+{
+  "app": {
+    "starting": "Demarrage d'IronCloak...",
+    "proxy_will_listen": "Le proxy ecoutera sur {0}",
+    "shutdown": "Signal d'arret recu, fermeture...",
+    "runtime_error": "Erreur du runtime : {0}",
+    "config_loaded": "Configuration chargee (langue : {0})"
+  },
+  "tor": {
+    "configuring": "Configuration du client Tor...",
+    "bootstrapping": "Amorcage de Tor (cela peut prendre un moment)...",
+    "bootstrap_complete": "Amorcage de Tor termine !",
+    "build_config_failed": "Echec de la construction de la config Tor",
+    "bootstrap_failed": "Echec de l'amorcage du client Tor"
+  },
+  "socks": {
+    "listening": "Serveur SOCKS5 en ecoute sur {0}",
+    "bind_failed": "Echec du bind du serveur SOCKS5 sur {0}",
+    "accept_failed": "Echec de l'acceptation de la connexion : {0}",
+    "new_connection": "[conn:{0}] Nouvelle connexion",
+    "connection_error": "[conn:{0}] Erreur de connexion : {1}",
+    "connection_closed": "[conn:{0}] Connexion fermee",
+    "handshake_failed": "Echec du handshake SOCKS5 : {0}",
+    "no_target": "Pas d'adresse cible dans la requete SOCKS5",
+    "ip_rejected": "[conn:{0}] Connexion IP directe rejetee vers {1} (dns_reject_ip=true)",
+    "ip_rejected_bail": "Les connexions IP directes sont rejetees (dns_reject_ip=true)",
+    "connecting": "[conn:{0}] CONNECT {1}:{2}",
+    "opening_stream": "[conn:{0}] Ouverture du flux Tor vers {1}:{2}...",
+    "connect_timeout": "[conn:{0}] Connexion Tor vers {1}:{2} expiree apres 60s",
+    "connect_failed": "Connexion Tor vers {0}:{1} echouee : {2}",
+    "stream_established": "[conn:{0}] Flux Tor etabli vers {1}:{2}",
+    "socks_reply_sent": "[conn:{0}] Reponse SOCKS5 de succes envoyee",
+    "relay_complete": "[conn:{0}] Relais termine : {1} octets montants, {2} octets descendants",
+    "relay_ended": "[conn:{0}] Relais termine : {1}",
+    "server_error": "Erreur du serveur SOCKS5 : {0}"
+  },
+  "config": {
+    "file_not_found": "Fichier de config {0} introuvable, utilisation des valeurs par defaut",
+    "read_failed": "Echec de la lecture du fichier de config : {0}",
+    "parse_failed": "Echec du parsing de la config TOML"
+  },
+  "gui": {
+    "status": "Statut",
+    "connected": "Connecte",
+    "disconnected": "Deconnecte",
+    "configure": "Configurer...",
+    "quit": "Quitter",
+    "port_label": "Port SOCKS5 :",
+    "language_label": "Langue :",
+    "apply": "Appliquer",
+    "saved": "Configuration sauvegardee.",
+    "save_failed": "Echec de la sauvegarde de la configuration : {0}",
+    "restart_required": "Redemarrage necessaire pour appliquer les changements",
+    "restart": "Redemarrer maintenant",
+    "pending_port": "(au prochain redemarrage : {0})",
+    "window_title": "IronCloak"
+  }
+}

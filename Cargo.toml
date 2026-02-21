@@ -1,0 +1,29 @@
+[package]
+name = "ironcloak"
+version = "1.0.1"
+edition = "2021"
+
+[dependencies]
+arti-client = { version = "0.39", features = ["tokio", "native-tls", "static-sqlite"] }
+tokio = { version = "1", features = ["full"] }
+fast-socks5 = "0.9"
+tokio-util = { version = "0.7", features = ["compat"] }
+futures = "0.3"
+serde = { version = "1", features = ["derive"] }
+toml = "0.8"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+tor-rtcompat = "0.39"
+tor-config-path = "0.39"
+tokio-stream = "0.1"
+tracing-appender = "0.2"
+chrono = "0.4"
+eframe = "0.31"
+serde_json = "1"
+image = { version = "0.25", default-features = false, features = ["png"] }
+
+[target.'cfg(windows)'.dependencies]
+tray-icon = "0.21"
+winapi = { version = "0.3", features = ["winuser"] }

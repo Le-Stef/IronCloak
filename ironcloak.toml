@@ -1,0 +1,12 @@
+[proxy]
+listen_addr = "127.0.0.1"
+listen_port = 9150
+dns_reject_ip = true
+
+[tor]
+data_dir = "./data/arti"
+
+[logging]
+level = "info"
+log_dir = "./logs"
+language = "fr"
